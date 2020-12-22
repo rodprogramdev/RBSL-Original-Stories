@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEXT-ALIGN PROPERTY</title>
+    <style>
+        /*
+        The position property will specify the type of positionig method we can use for an element. 
+        
+        */
+        body{
+            background-color: salmon;
+            margin: 0;
+            padding: 0;
+        }
+
+        .parent-container {
+            background-color:crimson;
+            height: 90vh;
+            font-size:20px;
+            padding: 50px;
+            margin: 30px;
+            position: relative;
+            text-align: center;
+           
+           
+            
+        }
+
+        .box {
+            background-color: blue;
+            width: 100px;
+            height:100%;
+            display: inline-block;
+            
+        }
+      
+
+        .box__child--1 {
+            background-color: darkcyan;
+            height: 150px;
+            width: 150px;
+          /*  position:Relative;
+            top:50px;*/
+            
+        }
+
+
+        .box__child--2 {
+            background-color:darkkhaki;
+            height: 150px;
+            width: 150px;
+           /* text-align: justify;*/
+           /*     position:fixed;
+         top:0px;
+           left: 1000px;*/
+
+            
+        }
+
+        .box__child--3 {
+            background-color:darkgray;
+            height: 150px;
+            width: 150px;
+            /*position: absolute;
+            top: 0px;*/                   
+           
+            
+        }
+
+        .box__child--4 {
+            background-color:cornsilk;
+            height: 150px;
+            width: 150px;
+          /*  position: sticky;
+            position: -webkit-sticky;Safari
+            top:0px;*/
+        }
+
+        .about{
+            background-color: blue;
+            height: 100vh;
+            color: white;
+            font-size: 50px;
+            
+        }
+
+        h2{
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="parent-container">
+            <h1>PARENT ELEMENT CONTAINER</h1>
+            <div class="box box__child--1">CHILD 1</div>
+            <div class="box box__child--2">CHILD 2</div>
+            <div class="box box__child--3">CHILD 3</div>
+            <div class="box box__child--4">CHILD 4</div>
+        </div>
+    </section>
+    <section>
+       <div class="about">
+        <h2>SECTION 2</h2>
+       </div> 
+    </section>
+</body>
+
+</html>

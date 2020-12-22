@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN UP</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /*GLOBAL FONT-SIZE THROUGH ROOT ELEMENT*/
+        html{
+            font-size: 62.5%; 
+            /* Default font-size of browsers is 16px = 100%
+            10/16 =
+            SET THE OVERALL FONT-SIZE TO A PERCENTAGE UNIT*/
+        }
+
+        body {
+            background-color: white;
+            background-color: #f1eadf;
+            font-family: 'Chewy', cursive;
+            /* font-size: 16px; */
+        }
+
+        @media only screen and (max-width:600px){
+            body{
+                font-size: 1.2rem; /*12px;*/
+            }
+        }
+
+       
+
+        .form__container {
+            /*  background-color: orangered;*/
+            border: .3rem solid white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 25%;
+            height: 35.5rem;
+            box-shadow: 0 0 10px black;
+            border-radius: .5rem;
+        }
+
+        @media only screen and (max-width:600px){
+            .form__container{
+                width:75%;   
+                height: 35.5rem;             
+            }
+
+        }
+
+        .form__signUp--div1 {
+            background-color: rgb(16, 84, 211);
+            padding: .3rem;
+            margin: .2rem;
+            height: 34.5rem;
+            border-radius: .5rem;
+            color: white;
+        }
+
+
+        h1 {
+            margin-left: .5rem;
+            /* text-align:center; */
+        }
+
+        .form__para--1 {
+            margin-left: .5rem;
+            margin-bottom: .2rem;
+            /* text-align:center; */
+        }
+
+
+        @media only screen and (max-width:600px){
+            h1, 
+            .form__para--1{
+                text-align:center;
+            }
+            /* .form__para--1{
+                text-align:center;
+            } */
+        }
+
+        #first-name {
+            border-radius: .5rem;
+            margin: .2rem .5rem 1rem .5rem;
+            padding-left: .5rem;
+            /*margin-bottom:10px;*/
+            height: 3rem;
+        }
+
+        #last-name {
+            border-radius: .5rem;
+            margin: .2rem .5rem 1rem .5rem;
+            padding-left: .5rem;
+            /*margin-bottom:10px;*/
+            height: 3rem;
+        }
+
+        #email {
+            border-radius: .5rem;
+            margin: .2rem .5rem 1rem 3.4rem;
+            padding-left: .5rem;
+            /*margin-bottom:10px;*/
+            height: 3rem;
+            width: 80%;
+
+        }
+
+        #psw {
+            border-radius: .5rem;
+            margin: .2rem .5rem 1rem 3.4rem;
+            padding-left: .5rem;
+            /* margin-bottom:10px;*/
+            height: 3rem;
+
+        }
+
+        #psw-repeat {
+            border-radius: .5rem;
+            margin: .2rem .5rem 1rem 2.5rem;
+            padding-left: .5rem;
+            /*margin-bottom:10px;*/
+            height: 3rem;
+        }
+
+        #remember {
+            margin-bottom: 1.5rem;
+            margin-left: 1rem;
+        }
+
+        .checkbox__label {
+            font-size: 1.4rem;
+            margin: 1rem 1rem 1rem .5rem;
+        }
+
+        .checkbox__para--1 {
+            font-size: 1.2rem;
+            margin-bottom: .8rem;
+            text-align: center;
+        }
+
+        .btn-cancel {
+            border-radius: 5%;
+            padding: .5rem;
+            margin: 1rem 1rem 1rem 2rem;
+            width: 40%;
+            cursor: pointer;
+            background-color: rgb(16, 84, 211);
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+        }
+
+        .btn-signup{
+            border-radius: 5%;
+            padding: .5rem;
+            margin: 1rem;
+            color: white;
+            width: 40%;
+            cursor: pointer;
+            background-color: rgb(16, 84, 211);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form__container">
+        <form action="rbsldevtechsolutions@gmail.com" method="POST">
+            <div class="form__signUp--div1">
+                <h1>SIGN UP</h1>
+                <p class="form__para--1">Its quick and easy</p>
+                <hr style="color:white;">
+                <br>
+                <!--SECTION FOR USER INFORMATION-->
+                <input id="first-name" type="text" placeholder="First Name" name="first-name" required>
+                <input id="last-name" type="text" placeholder="Last Name" name="last-name" required>
+                <input id="email" type="text" placeholder="Enter Email" name="email" required><br>
+
+                <!--SECTION FOR PASSWORD-->
+                <label for="psw" style="padding-left:8px">Password
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input id="psw" type="password" placeholder="Enter Password" id="psw" name="psw" required><br>
+                <label for="psw-repeat" style="padding-left:8px">Repeat Password</label>
+                <input id="psw-repeat" type="password" placeholder="Repeat Password" id="psw-repeat" name="psw-repeat"
+                    required><br />
+
+                <!--SECTION FOR CHECKBOX-->
+                <input type="checkbox" id="remember" name="remember" checked>
+                <label class="checkbox__label" for="remember">
+
+                    Remember me</label>
+
+                <p class="checkbox__para--1">
+                    By creating an account you agree to our <a href="#" style="color:red;">Terms & Privacy</a>
+                </p>
+                <!--BUTTONS SECTION-->
+                <div class="form__btn--div2">
+                    <button type="button" class="btn-cancel"><a href="index.html">Cancel</a></button>
+                    <button type="submit" class="btn-signup">Sign Up</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>

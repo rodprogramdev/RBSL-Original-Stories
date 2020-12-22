@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS UNITS </title>
+    <style>
+        .parent{
+            background-color: blue;
+            height: 200px;
+            width: 200px;
+        }
+
+        .child{
+            background-color: yellow;
+           height: 50%;
+           width: 100%;
+           padding: 25px;
+           box-sizing: border-box;
+           
+                     
+            
+        }
+    /*
+    Absolute lengths are pertaining to fix length it will not be related to any element.
+        .cm{
+            font-size: 1cm;
+        }
+
+        .mm{
+            font-size: 1mm;
+        }
+
+        .in{
+            font-size:1in;
+        }
+        .px{
+            font-size:1px;
+        }
+        .pt{
+            font-size:1pt;
+        }
+
+*/
+
+ /*RELATIVE LENGTHS
+ It will be related to another length property of another element*/
+ .em{
+            font-size: 1em;
+        }
+
+        .ex{
+            font-size: 1ex;
+        }
+
+        .ch{
+            font-size: 1ch;
+        }
+
+        .rem{
+            font-size: 1rem;
+        }
+
+        .vw{
+            font-size: 1vw;
+        }
+
+        .vh{
+            font-size: 1vh;
+        }
+
+        .vmin{
+            font-size:1vmin;
+        }
+        .vmax{
+            font-size: 1vmax;
+        }
+        .percentage{
+            font-size: 1%;
+        }
+       
+    </style>
+    
+</head>
+<body>
+    <div class="parent">
+        <div class="child">
+            <p>HELLO WORLD!</p>
+        </div>
+    </div>
+    <!--
+    <h1>Absolute Lengths</h1>
+    <p class="cm">CENTIMETERS</p>
+    <p class="mm">MELLIMETERS</p>
+    <p class="in">INCHES (1in=96px=2.54cm)</p>
+    <p class="px">PIXESL(1 px= 1/96th of 1in</p>
+    <p class="pt">PIXES(1pt= 1/72 of 1in</p>
+    <p class="pc">PICAS(1pc= 12pt)</p>
+    -->
+
+<h1>Relative Lengths</h1>
+    <p class="em">em 	Relative to the font-size of the element (2em means 2 times the size of the current font) 	<p>
+        <p class="ex">ex 	Relative to the x-height of the current font (rarely used) 	</p>
+        <p class="ch">ch 	Relative to the width of the "0" (zero) 	</p>
+        <p class="rem">rem 	Relative to font-size of the root element 	</p>
+        <p class="vw"> 	Relative to 1% of the width of the viewport* 	</p>
+        <p class="vh">vh 	Relative to 1% of the height of the viewport* 	</p>
+        <p class="vmin">vmin 	Relative to 1% of viewport's* smaller dimension </p>	
+        <p class="vmax">vmax 	Relative to 1% of viewport's* larger dimension 	</p>
+        <p class="percentage">% 	Relative to the parent element</p>
+    
+</body>
+</html>

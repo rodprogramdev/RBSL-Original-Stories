@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS UNITS PART 3 REM AND EM</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html{
+            font-size: 16px;
+        }
+
+    
+        .box {
+            background-color: blue;
+            color: white;
+        }
+
+        .box__green {
+            background-color: green;
+            margin: 20px;
+            padding: 20px;
+            border: 5px solid lightsalmon;
+            width: 1000px;
+            /*Absolute unit*/
+        }
+
+        .box__red {
+            background-color: red;
+            margin: 20px;
+            padding: 20px;
+            border: 5px solid lightsalmon;
+            width: 50%;
+            /*Relative unit*/
+        }
+
+
+        .container {
+            background-color: #777;
+            width: 50%;
+            font-size: 30px;
+        }
+
+        .rem {
+            background-color: aquamarine;
+            margin: 20px;
+            padding: 20px;
+            font-size: 1rem;
+            /*Relative to the root font-size*/
+        }
+
+        .em {
+            background-color: blueviolet;
+            margin: 20px;
+            padding: 20px;
+            font-size: 1em;
+            /*Relative to the parent element*/
+
+
+        }
+
+        .em2{background-color: blueviolet;
+            margin: 20px;
+            padding: 20px;
+            font-size: 2em;
+        }
+
+        p{
+            font-size: 3em;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="rem">1 REM</div>
+    <div class="em">1 EM</div>
+    <div class="box">IGNORE THIS BECAUSE THIS DIV IS JUST A SEPARATOR</div>
+    <div class="container">
+        <div class="rem">1 REM</div>
+        <div class="em">1 EM</div>
+        <div class="em2">2 EM
+            <p>3EM</p>
+        </div>
+    </div>
+
+    <!--
+    <header>
+        <h1>PIXEL AND PERCENTAGE LECTURE</h1>
+    </header>
+  <div class="box box__green">Pixel 100px</div>
+  <div class="box box__red">Percentage 50%</div>
+  <div class="box">IGNORE THIS BECAUSE THIS DIV IS JUST A SEPARATOR</div>
+  <div class="container">
+    <div class="box box__green">Pixel 100px</div>
+    <div class="box box__red">Percentage 50%</div>
+  </div>
+  -->
+
+</body>
+
+</html>

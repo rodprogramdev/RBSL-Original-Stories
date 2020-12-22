@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS UNITS PART 2 Px %</title>
+    <style>
+        .box{
+            background-color: blue;
+            color: white;
+        }
+
+        .box__green{
+            background-color:green;
+            margin: 20px;
+            padding: 20px;
+            border: 5px solid lightsalmon;
+            width: 1000px; /*Absolute unit*/
+        }
+
+        .box__red{
+            background-color: red;
+            margin: 20px;
+            padding: 20px;
+            border: 5px solid lightsalmon;
+            width: 50%; /*Relative unit*/
+        }
+
+        .container{
+            background-color: #777;
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>PIXEL AND PERCENTAGE LECTURE</h1>
+    </header>
+  <div class="box box__green">Pixel 100px</div>
+  <div class="box box__red">Percentage 50%</div>
+  <div class="box">IGNORE THIS BECAUSE THIS DIV IS JUST A SEPARATOR</div>
+  <div class="container">
+    <div class="box box__green">Pixel 100px</div>
+    <div class="box box__red">Percentage 50%</div>
+  </div>
+  
+</body>
+</html>

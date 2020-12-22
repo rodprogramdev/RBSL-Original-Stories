@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property Inline, Inline-block, Block</title>
+    <style>
+               body {
+            background-color: palegoldenrod;
+            font-family: 'Chewy', cursive;
+            margin: 20px;
+            font-size: large;
+
+
+        }
+        #nav--1 {
+            background-color: red;
+            list-style-type:none;
+            margin:0;
+            padding:0;
+        }
+
+        .inline{
+            display:inline;
+            padding: 20px;
+           
+        }
+
+        #nav--2 {
+            background-color: green;
+            list-style-type:none;
+            margin:0;
+            padding:0;
+        }
+
+        .inline-block{
+            display:inline-block;
+            padding:20px;
+            height: 50px;
+        }
+
+        #nav--3 {
+            background-color: blue;
+        }
+
+        .block{
+            display: block;
+            padding: 20px;
+            height:20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>DISPLAY PROPERTY</h1>
+    <section>
+        <h2>NAVIGATION Inline</h2>
+        <ul id="nav--1">
+            <li class="inline">HOME</li>
+            <li class="inline">ABOUT</li>
+            <li class="inline">CONTACT</li>
+        </ul>
+    </section>
+    <section>
+        <h2>NAVIGATION Inline-block</h2>
+        <ul id="nav--2">
+            <li class="inline-block">HOME</li>
+            <li class="inline-block">ABOUT</li>
+            <li class="inline-block">CONTACT</li>
+        </ul>
+    </section>
+    <section>
+        <h2>NAVIGATION Block (Default)</h2>
+        <ul id="nav--3">
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>CONTACT</li>
+        </ul>
+    </section>
+</body>
+
+</html>

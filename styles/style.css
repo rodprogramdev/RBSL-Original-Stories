@@ -1,0 +1,778 @@
+body {
+    background-color: white;
+    font-family: 'Chewy', cursive;
+    margin: 0;
+    font-size: 20px;
+
+
+
+}
+
+.header__container {
+    /*   background-color: rgb(164, 47, 241);*/
+    /*  font-size: initial;*/
+    position: relative;
+    height: 10vh;
+
+
+}
+
+
+
+.header__nav {
+    background-color: rgb(16, 84, 211);
+    border: 2px solid #fff;
+    font-size: inherit;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    width: 37.5%;
+    position: fixed;
+    z-index: 1;
+
+
+
+}
+/*MEDIA QUERY FOR THE HEADER NAV DIV*/
+@media only screen and (max-width: 600px){
+    .header__nav{
+        width: 86%;
+        top: 8%;
+        left: 50%;
+        transform: translate(-50%);
+       
+    }
+}
+
+/*MEDIA QUERY FOR THE HEADER NAV UL (Unordered list)*/
+@media only screen and (max-width: 600px){
+    .header__nav--ul{
+        margin: 0 auto;
+        margin-bottom: 4px;
+    }
+}
+
+
+    /*MEDIA QUERY FOR THE HEADER NAV LI (List)*/
+
+
+@media only screen and (max-width:600px){
+    .header__nav--li{
+       font-size: .85rem;
+       margin: 0;
+       display:inline;
+
+    }
+}
+
+
+
+/*
+
+.header__logo-box {
+    /*    background-color: green;
+    position: absolute;
+    top: 20%;
+    left: 90%;
+    height:10px;
+    animation: moveowl;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes moveowl {
+    30%{
+        margin: 20px -20px;
+    }
+
+    50% {
+        margin: 20px;
+    }
+}
+
+.header__img {
+    height: 60px;
+    width: 60px;
+}
+*/
+
+
+/*SIGN UP & SIGN IN BUTTONS*/
+
+.header__signIn {
+    float: right;
+    /*background-color: red;*/
+}
+
+
+.header__signIn--ul {
+    margin: 30px 45px 0 10px;
+    position: absolute;
+    top:20%;
+    left:75%;
+    width:20%;
+    /* background-color:orangered; */
+}
+
+@media only screen and (max-width:600px){
+    .header__signIn--ul{
+        margin: 30px 15px 0 30px;
+        top: 10%;   
+        left: 18%;
+        transform: translateX(-24%);
+        width: 90%;
+
+    }
+}
+
+li {
+     display: inline;
+     /* background-color: red; */
+} 
+
+
+.header__signIn--li {
+    list-style-type: none;
+    color: white;
+    display: inline;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 20px;
+    /* background-color:yellow; */
+}
+
+/* @media only screen and (max-width:600px){
+    .header__signIn--li {
+
+    }
+} */
+
+.header__signIn--a1 {
+    border: 2px solid white;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(16, 84, 211);
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 20px;
+    padding-right: 23px;
+    text-align: center;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+    transition: all .2s;
+}
+@media only screen and (max-width:600px){
+    .header__signIn--a1{
+        position: relative;
+        top:-30px;
+        left: 20%;
+        margin: -1px;
+        font-size: .80rem;
+    }
+}
+  
+
+.header__signIn--a1:hover {
+    transform: translateY(20px);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.6);
+
+}
+
+.header__signIn--a1:active {
+    transform: translateY(18px);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+.header__signIn--a2 {
+    border: 2px solid white;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(16, 84, 211);
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 20px;
+    padding-right: 23px;
+    text-align: center;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+    transition: all .2s;
+}
+
+@media only screen and (max-width:600px){
+    .header__signIn--a2{
+        position: relative;
+        top:-30px;
+        left: 20%;
+        margin: -1px;
+        font-size: .80rem;
+    }
+}
+
+
+.header__signIn--a2:hover {
+    transform: translateY(20px);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.6);
+
+}
+
+.header__signIn--a2:active {
+    transform: translateY(18px);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+
+
+/********************************/
+/* li {
+    display: inline;
+    /* background-color: red;
+} */
+
+
+.header__links {
+    color: white;
+    padding: 3px;
+    text-decoration: none;
+}
+
+/**************************************************TEXT-BOX SECTION************************************************/
+.text-box {
+    background-image: url(../images/Janine_Michaela_Arts.png);
+    background-size: cover;
+    background-position: 20% 30%;
+    background-attachment: fixed;
+    border-radius: 20px;
+    border: 10px solid black;
+    color: white;
+    margin: 0px 50px 40px 50px;
+    padding: 25%;
+}
+
+@media only screen and (max-width:600px){
+    .text-box{
+        margin: 0;      
+        border: 5px solid black;
+        border-left: 0;
+        border-right:0;
+        border-radius:0;
+
+    }
+}
+
+.text-box__heading {
+    background-color: rgba(16, 84, 211, 0.63);
+    border: 2px solid white;
+    height: 50%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+
+}
+
+@media only screen and (max-width:600px){
+    .text-box__heading{
+        top:15%;
+        left: 50%;
+        height: 25%;
+        margin-top:8%;
+
+    }
+}
+
+.text-box__heading--h1 {
+    padding: 5% 0 0 0;
+    text-align: center;
+    text-shadow: 0 4px 2px rgb(11, 9, 148);
+    font-size: 4rem;
+}
+
+@media only screen and (max-width:600px){
+    .text-box__heading--h1 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    }
+}
+
+.text-box__heading--span2 {
+    font-size: 1.5rem;
+
+}
+
+@media only screen and (max-width:600px){
+    .text-box__heading--span2 {
+        font-size: .9rem;
+    }
+}
+
+
+.link-resume {
+    text-decoration: none;
+    color: red;
+    text-shadow: -2px 0px 1px black;
+
+
+}
+
+.link-resume__span {
+    text-decoration: underline red solid 2px;
+    text-shadow: -2px 0 1px black;
+    font-size: 1.3rem;
+    padding: 1px;
+}
+
+/* HORIZONTAL RULE STYLING
+
+hr {
+    border: 3px double red;
+
+}
+
+hr.style-1 {
+    border-top: 5px double red;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+    width: 100%;
+    text-align: center;
+
+}
+
+hr.style-1::after {
+    content: '\231A';
+    position: relative;
+    top: -23px;
+    font-size: 28px;
+}*/
+
+
+/*******************************************ABOUT SECTION******************************/
+.about {
+    padding: 20px 20px;           
+
+}
+
+@media only screen and (max-width:600px){
+    .about{
+        font-size: 16px;
+    }
+}
+
+.about__img {
+    float: left;
+    
+}
+
+.about__img--pic {
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    margin: 60px 50px;
+    border: 2px solid black;
+}
+
+@media only screen and (max-width:600px){
+    .about__img--pic{
+        height: 280px;
+        width: 280px;
+    }
+}
+
+.about__heading {
+    text-align: center;
+    color: brown;
+}
+
+/******************************************SECTION TABLES*************************/
+.section-tables {
+    position: relative;
+    text-align: center;
+}
+
+.table-container {
+    display: inline-block;
+    padding-bottom: 100px;
+    /* background-color:red;*/
+    color: brown;
+    width: 90%;
+
+}
+
+table {
+    background-color: rgb(16, 84, 211);
+    color: #fff;
+    width: 100%;
+    border-spacing: 20px;
+    border-radius: 20px;
+
+}
+
+
+table,
+th,
+td {
+    border: 3px solid black;
+    padding: 8px;
+    text-transform: capitalize;
+}
+
+
+td {
+    background-color: brown;
+}
+
+thead {
+    background-color: darkblue;
+    font-size: 30px;
+    text-shadow: 0 0 4px #eb447e;
+}
+
+
+.theading1 {
+    border: 1px ridge peachpuff;
+    border-width: 5px;
+}
+
+.theading2 {
+    background-color: blue;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.726);
+    padding: 20px;
+    border: 2px ridge peachpuff;
+}
+
+/*****************************************************MEDIA QUERIES FOR SECTION TABLES*************************************/
+@media only screen and (max-width:600px){
+    table,
+    td {
+        padding:0;
+        
+    }
+
+    td{
+        font-size: 12px;
+    }
+
+    thead{
+        font-size: 16px;
+    }
+
+    .theading2{
+        font-size: 13px;
+        padding:4px;
+    }
+
+}
+
+
+
+/********************************************************CHILDREN STORIES SECTION*****************************************/
+.childrenStories {
+    background-image: url(../images/mahdiar-mahmoodi-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 150px 20px 100px 20px;
+    color: #fff;
+    position: relative;
+}
+
+@media only screen and (max-width:600px){
+    .childrenStories{
+        height: 200vh;
+        padding: 120px 20px;
+    }
+}
+
+.childrenStories__heading--1 {
+    position: absolute;
+    background-color: rgb(165, 42, 42);
+    display: inline;
+    text-shadow: 0 4px 2px rgb(11, 9, 148);
+    border-radius: 20px;
+    padding: 20px;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width:600px){
+    .childrenStories__heading--1{
+        text-align: center;
+        width: 50%;
+        font-size: 20px;
+        margin-top: 0;
+    }
+}
+
+.childrenStories__article {
+    background-color: rgba(3, 37, 97, 0.767);
+    width: 65%;
+    padding-top: 3px;
+    padding-left: 25px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+}
+
+@media only screen and (max-width:600px){
+    .childrenStories__article{
+        font-size: 14px;
+        width: 90%;
+        margin:0 auto;
+    }
+
+}
+
+aside {
+    background-color: rgba(16, 84, 211, 0.63);
+    text-shadow: 0px 0px 5px #FF5792,
+        0px 0px 5px #000000;
+    width: 30%;
+    float: right;
+    padding-left: 15px;
+    border-radius: 15px;
+    margin-top: 50px;
+    font-style: italic;
+}
+
+@media only screen and (max-width:600px){
+    aside{
+        width: 90%;
+        float:none;
+        margin:2% auto;
+        font-size: 14px;
+        text-shadow: 0 0 5px #000;
+        padding: 5px;
+    }
+}
+
+
+.photo-credit__span {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-shadow: 0 4px 2px rgb(226, 26, 26);
+    font-size: 1rem;
+}
+
+@media only screen and (max-width:600px){
+    .photo-credit__span{
+        padding-top: 5%;
+        font-size: .8rem;
+    }
+}
+
+
+/**************************************************COMMUNITY SECTION***************************************************/
+.community {
+    height: 80vh;
+    text-align: center;
+    padding: 50px 50px 50px 0px;
+    color: brown;
+}
+
+
+@media only screen and (max-width:600px){
+    .community__heading{
+        margin-left: 40px;
+    }
+}
+
+.clearfix {
+    content: "";
+    width: 100%;
+    clear: both;
+    display: table;
+}
+
+.box {
+    float: left;
+    background-color: #fff;
+    height: 300px;
+    width: 300px;
+    list-style-type: none;
+    margin: 1rem 4%;
+    border: 2px ridge black;
+
+}
+
+@media only screen and (max-width:600px){
+    .box{
+        float:left;
+        height: 100px;
+        width: 90%;
+        padding: 2px;
+        text-align:center;
+        margin: 5% 1%;
+        border: 1px ridge black;
+    }
+}
+
+.box:hover {
+    box-shadow: -2px 8px 17px -5px rgba(0, 0, 0, 0.89);
+    cursor: pointer;
+
+}
+
+.box--1 {
+    background-image: url(../images/rbslopez-photos-website.png);
+    background-size: cover;
+    background-position: left;
+
+}
+
+@media only screen and (max-width:600px){
+    .box--1 {
+         background-position:top; 
+    }
+}
+
+.box--2 {
+    background-image: url(../images/2mbchronicleslogo.jpg);
+    background-size: contain;
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width:600px){
+
+    .box--2{
+        background-image:url(../images/mbcchronicles.png);
+        background-position: 50% 42%;
+        background-size:cover;
+    }
+}
+
+
+.box--3 {
+    background-image: url(../images/sidhaya.jpg);
+    background-size: cover;
+    background-position: 15% 42%;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width:600px){
+    .box--3 {
+        background-image:url(../images/sidhaya2.jpg);
+        background-position: 15% 42%;
+        background-size: cover;
+    }
+}
+
+.list-item__link {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*PARAGRAPH STYLING*/
+p {
+    text-indent: 0px;
+}
+
+#about__p--1 {
+    text-indent: 0;
+    /* display: block;*/
+    color: rgb(11, 9, 148);
+    /*text-align: center;*/
+}
+
+.about__p--2 {
+    text-indent: 0;
+    color: rgb(11, 9, 148);
+
+}
+
+
+blockquote {
+    border-left: 5px solid rgb(23, 35, 199);
+    padding-left: 10px;
+}
+
+/*********************************************************************FOOTER SECTION*********************************************/
+footer {
+    background-color: rgb(9, 5, 75);
+    color: #fff;
+    text-align: center;
+}
+
+.footer__heading--2{
+    padding: 35px 10px 35px 10px;
+    margin: 0px;
+    text-shadow: -3px 3px 4px #00a2ff;
+}
+
+.footer__container {
+    background-color: rgb(16, 84, 211);
+    height: 40vh;
+}
+
+/* .footer__navigation {
+    position: relative;
+} */
+
+.footer__list {
+    margin-top: 2rem;
+    float: left;
+    height: 15vh;
+    list-style-type: none;
+}
+
+@media only screen and (max-width:600px){
+    .footer__list{
+        font-size:12px;
+        margin-top:20px;
+    }
+}
+
+.footer__heading--4{
+    display:inline;
+    padding: 1rem 10px 0px 10px;
+    text-shadow: -3px 3px 4px rgba(2,51, 134, 0.938);
+    border-bottom: 2px solid rgb(245,2,2);
+}
+
+@media only screen and (max-width:600px){
+    .footer__heading--4{
+        font-size:12px;
+        padding: 0;
+    }
+}
+
+
+.footer__item {
+    display:block;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    text-shadow: -2px 0px 1px rgb(75, 23, 23);
+}
+
+.footer__link {
+    text-decoration: none;
+    color: #f7f7f7;
+}
+
+.footer__link:hover{
+    text-shadow:-1px 0px 1px rgb(3,240,3);
+}
+
+.footer__copyright{
+    padding: 0 25px;
+    text-align: center;
+    margin-top: 3.5rem;
+    /* background-color:red; */
+}
+@media only screen and (max-width:600px){
+    .footer__copyright{
+        font-size: 12px;
+        position: absolute;
+        margin-top: 130px;
+        left:50%;
+        transform:translate(-50%);
+        width: 80%;
+    }
+}
+

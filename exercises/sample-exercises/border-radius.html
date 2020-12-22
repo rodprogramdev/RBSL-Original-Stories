@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border-Radius Property</title>
+    <style>
+        body {
+     background-color: palegoldenrod;
+     font-family: 'Chewy', cursive;
+     margin: 20px;
+     font-size: large;
+     color: white;
+
+
+ }
+
+ .container{
+     background-color: blue;
+     text-align: center;
+ }
+
+ .box{
+     width: 200px;
+     height: 200px;
+     display:inline-block;
+     margin: 10px;
+ }
+
+ .radius--four{
+     background-color: brown;
+     border-radius: 10px 20px 30px 40px;
+ }
+ .radius--three{
+     background-color:coral;
+     border-radius:10px 30px 50px;
+ }
+ .radius--two{
+     background-color:burlywood;
+     border-radius: 20px 50px;
+ }
+ .radius--one{
+     background-color:chocolate;
+     border-radius: 10%;
+ }
+
+ .container2{
+     margin-top: 20px;
+     text-align:center;
+ }
+ 
+ .radius--circle{
+     background-color: bisque;
+     display: inline-block;     
+ }
+
+img{
+    height:200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+ </style>
+</head>
+<body>
+    <div class="container">
+        <h1>BORDER RADIUS</h1>
+        <div class="box radius--four">This uses four values</div>
+        <div class="box radius--three">This uses three</div>
+        <div class="box radius--two">This uses two</div>
+        <div class="box radius--one">This uses one</div>
+        
+    </div>
+    <div class="container2">
+        <div class="radius--circle">
+            <img src="Rod.jpg" alt="Profile Pic">
+        </div>
+    </div>
+    
+</body>
+</html>

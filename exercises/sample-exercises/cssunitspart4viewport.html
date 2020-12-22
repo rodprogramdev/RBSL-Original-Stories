@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS UNITS PART 4 VIEWPORT width and height</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: green;
+
+        }
+
+        .box {
+            background-color: yellow;
+            margin-bottom: 20px;
+        }
+
+        .box__percentage{
+            width: 50%;
+        }
+
+        .box__vw {
+            width: 50vw;
+        }
+
+        .box__vh{
+            height: 25vh;
+        }
+
+        .container{
+            background: red;
+            width: 50vh;
+            height: 55vh;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="box box__percentage">VIEWPORT 50%</div>
+    <div class="box box__vw">VIEWPORT WIDTH 50vw</div>
+    <!--1vw = 1% of the viewport width-->
+    <div class="box box__vh">VIEWPORT HEIGHT 25vh</div>
+    <!--1vh = 1% of the viewport heigth-->
+
+    
+<div class="container"> 
+    <div class="box box__percentage">VIEWPORT 50%</div>
+    <div class="box box__vw">VIEWPORT WIDTH 50vw</div>
+    <!--1vw = 1% of the viewport width-->
+    <div class="box box__vh">VIEWPORT HEIGHT 25vh</div>
+    <!--1vh = 1% of the viewport heigth-->
+
+</div>
+
+
+</body>
+
+</html>
