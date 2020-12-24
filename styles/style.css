@@ -6,28 +6,37 @@ body {
 }
 
 /****************************************HEADER SECTION*********************/
+header {
+  height: 100vh;
+}
+
 .header__container {
+  background-image: url("../images/pexels-lina-kivaka-1741231-banner.jpg");
+  background-size: cover;
+  background-position: 0% 100%;
   position: relative;
-  height: 10vh;
+  height: 15vh;
+  padding: 10px 10px;
 }
 
 .header__nav {
   background-color: rgb(16, 84, 211);
   border: 2px solid #fff;
-  font-size: inherit;
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
   width: 37.5%;
   position: fixed;
   z-index: 1;
+  top:3%;
 }
 /*MEDIA QUERY FOR THE HEADER NAV DIV*/
+
 @media only screen and (max-width: 600px) {
   .header__nav {
     width: 86%;
     top: 8%;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-50%); 
   }
 }
 
@@ -169,10 +178,10 @@ li {
   background-position: 20% 30%;
   background-attachment: fixed;
   border-radius: 20px;
-  border: 10px solid black;
+  /* border: 10px solid black; */
   color: white;
-  margin: 0px 50px 40px 50px;
-  padding: 25%;
+  /* margin: 0px 50px 40px 50px; */
+  padding: 23%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -188,12 +197,13 @@ li {
 .text-box__heading {
   background-color: rgba(16, 84, 211, 0.63);
   border: 2px solid white;
-  height: 50%;
+  /* height: 50%; */
   position: absolute;
-  top: 40%;
+  top: 42%;
   left: 50%;
   transform: translateX(-50%);
   width: 70%;
+  border-radius: 50%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -210,6 +220,7 @@ li {
   text-align: center;
   text-shadow: 0 4px 2px rgb(11, 9, 148);
   font-size: 4rem;
+  line-height: 75%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -220,7 +231,7 @@ li {
 }
 
 .text-box__heading--span2 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 @media only screen and (max-width: 600px) {
@@ -232,6 +243,7 @@ li {
 /*******************************************ABOUT SECTION******************************/
 .about {
   padding: 20px 20px;
+  margin: 5% 0 0 0;
 }
 
 @media only screen and (max-width: 600px) {
