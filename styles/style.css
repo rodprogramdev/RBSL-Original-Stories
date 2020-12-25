@@ -25,6 +25,12 @@ header {
   padding: 10px 10px;
 }
 
+@media only screen and (max-width: 600px) {
+  .header__container{
+    background-position: 65%;
+  }
+}
+
 .header__nav {
   background-color: rgb(16, 84, 211);
   border: 2px solid #fff;
@@ -208,7 +214,7 @@ li {
   top: 42%;
   left: 50%;
   transform: translateX(-50%);
-  width: 90%;
+  width: 70%;
   border-radius: 50%;
   animation: fadeIn 5s;
 }
@@ -229,11 +235,12 @@ li {
     left: 50%;
     height: 25%;
     margin-top: 8%;
+    width: 90%;
   }
 }
 
 .text-box__heading--h1 {
-  padding: 10% 0 0 0;
+  padding: 5% 0 0 0;
   text-align: center;
   text-shadow: 0 4px 2px rgb(11, 9, 148);
   font-size: 4rem;
@@ -244,6 +251,7 @@ li {
   .text-box__heading--h1 {
     font-size: 1.5rem;
     margin-top: 20px;
+    padding: 10% 0 0 0;
   }
 }
 
@@ -667,4 +675,9 @@ footer {
     transform: translate(-50%);
     width: 80%;
   }
+}
+
+.footer__photo-credit{
+  text-decoration: none;
+  color:white;
 }
