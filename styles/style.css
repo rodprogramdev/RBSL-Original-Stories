@@ -10,6 +10,12 @@ header {
   height: 100vh;
 }
 
+@media only screen and (max-width: 600px) {
+  header{
+    height: 50vh;
+  }
+}
+
 .header__container {
   background-image: url("../images/pexels-lina-kivaka-1741231-banner.jpg");
   background-size: cover;
@@ -27,7 +33,7 @@ header {
   width: 37.5%;
   position: fixed;
   z-index: 1;
-  top:3%;
+  top: 3%;
 }
 /*MEDIA QUERY FOR THE HEADER NAV DIV*/
 
@@ -36,7 +42,7 @@ header {
     width: 86%;
     top: 8%;
     left: 50%;
-    transform: translate(-50%); 
+    transform: translate(-50%);
   }
 }
 
@@ -202,7 +208,7 @@ li {
   top: 42%;
   left: 50%;
   transform: translateX(-50%);
-  width: 70%;
+  width: 90%;
   border-radius: 50%;
   animation: fadeIn 5s;
 }
@@ -215,7 +221,6 @@ li {
   100% {
     opacity: 1;
   }
-  
 }
 
 @media only screen and (max-width: 600px) {
@@ -228,7 +233,7 @@ li {
 }
 
 .text-box__heading--h1 {
-  padding: 5% 0 0 0;
+  padding: 10% 0 0 0;
   text-align: center;
   text-shadow: 0 4px 2px rgb(11, 9, 148);
   font-size: 4rem;
