@@ -11,7 +11,7 @@ header {
 }
 
 @media only screen and (max-width: 600px) {
-  header{
+  header {
     height: 50vh;
   }
 }
@@ -26,11 +26,11 @@ header {
 }
 
 @media only screen and (max-width: 600px) {
-  .header__container{
+  .header__container {
     background-position: 65%;
   }
 }
-
+/*------------------------------------------------------------------------------*/
 .header__nav {
   background-color: rgb(16, 84, 211);
   border: 2px solid #fff;
@@ -41,8 +41,15 @@ header {
   z-index: 1;
   top: 3%;
 }
-/*MEDIA QUERY FOR THE HEADER NAV DIV*/
+/*---------------MEDIA QUERY FOR THE HEADER NAV DIV----------------------------*/
+/*MEDIA QUERY 1024px display resolution*/
+@media only screen and (max-width: 1024px) {
+  .header__nav {
+    width: 50%;
+  }
+}
 
+/*MEDIA QUERY Mobile phones 600px display resolution*/
 @media only screen and (max-width: 600px) {
   .header__nav {
     width: 86%;
@@ -52,7 +59,9 @@ header {
   }
 }
 
-/*MEDIA QUERY FOR THE HEADER NAV UL (Unordered list)*/
+/*------------------------------------------------------------------------------*/
+
+/*-------MEDIA QUERY FOR THE HEADER NAV UL (Unordered List)---------------------*/
 @media only screen and (max-width: 600px) {
   .header__nav--ul {
     margin: 0 auto;
@@ -80,13 +89,15 @@ li {
   text-decoration: none;
 }
 
-/*SIGN UP & SIGN IN BUTTONS*/
+/*------------------------------------------------------------------------------*/
 
+/*-------------MEDIA QUERY FOR THE SIGN IN & SIGN UP BUTTON---------------------*/
 .header__signIn {
   float: right;
   /*background-color: red;*/
 }
 
+/*------------------------------------------------------------------------------*/
 .header__signIn--ul {
   margin: 30px 45px 0 10px;
   position: absolute;
@@ -95,6 +106,17 @@ li {
   width: 20%;
 }
 
+/*------------- MEDIA QUERY FOR THE header__signIn--ul ---------------------*/
+/*MEDIA QUERY 1024px display resolution*/
+@media only screen and (max-width: 1024px) {
+  .header__signIn--ul {
+    /* background-color: blue; */
+    width: 25%;
+    top:15%;
+    left: 65%;   
+  }
+}
+/*MEDIA QUERY Mobile phones 600px display resolution*/
 @media only screen and (max-width: 600px) {
   .header__signIn--ul {
     margin: 30px 15px 0 30px;
@@ -105,6 +127,7 @@ li {
   }
 }
 
+/*------------------------------------------------------------------------------*/
 .header__signIn--li {
   list-style-type: none;
   color: white;
@@ -677,7 +700,7 @@ footer {
   }
 }
 
-.footer__photo-credit{
+.footer__photo-credit {
   text-decoration: none;
-  color:white;
+  color: white;
 }
