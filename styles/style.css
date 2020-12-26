@@ -112,8 +112,8 @@ li {
   .header__signIn--ul {
     /* background-color: blue; */
     width: 25%;
-    top:15%;
-    left: 65%;   
+    top: 15%;
+    left: 65%;
   }
 }
 /*MEDIA QUERY Mobile phones 600px display resolution*/
@@ -208,17 +208,24 @@ li {
 
 /**************************************************HEADER TEXT-BOX SECTION************************************************/
 .header__text-box {
-  background-image: url(../images/Janine_Michaela_Arts.png);
+  background-image: url("../images/Janine_Michaela_Arts.png");
   background-size: cover;
   background-position: 20% 30%;
   background-attachment: fixed;
-  border-radius: 20px;
-  /* border: 10px solid black; */
   color: white;
-  /* margin: 0px 50px 40px 50px; */
   padding: 23%;
 }
 
+/*------------------------------------------------------------------------------*/
+
+/*------------- MEDIA QUERY FOR THE HEADER TEXT-BOX ---------------------*/
+/*MEDIA QUERY 1024px display resolution*/
+@media only screen and (max-width: 1024px) {
+  .header__text-box {
+    padding: 30%;
+  }
+}
+/*MEDIA QUERY 600px display resolution*/
 @media only screen and (max-width: 600px) {
   .header__text-box {
     margin: 0;
@@ -229,10 +236,13 @@ li {
   }
 }
 
-.text-box__heading {
+/*------------------------------------------------------------------------------*/
+
+/*------------- MEDIA QUERY FOR THE .header__text-box--circle ---------------------*/
+
+.header__text-box--circle {
   background-color: rgba(16, 84, 211, 0.63);
   border: 2px solid white;
-  /* height: 50%; */
   position: absolute;
   top: 42%;
   left: 50%;
@@ -252,9 +262,19 @@ li {
   }
 }
 
+/*MEDIA QUERY 1024px display resolution*/
+@media only screen and (max-width: 1024px) {
+  .header__text-box--circle {
+    top: 45%;
+    width: 70%;
+    height: 30%;
+  }
+}
+
+/*MEDIA QUERY 600px display resolution*/
 @media only screen and (max-width: 600px) {
-  .text-box__heading {
-    top: 15%;
+  .header__text-box--circle {
+    top: 20%;
     left: 50%;
     height: 25%;
     margin-top: 8%;
@@ -262,7 +282,11 @@ li {
   }
 }
 
-.text-box__heading--h1 {
+/*------------------------------------------------------------------------------*/
+
+/*------------- MEDIA QUERY FOR THE .header__heading--1 ---------------------*/
+
+.header__heading--1 {
   padding: 5% 0 0 0;
   text-align: center;
   text-shadow: 0 4px 2px rgb(11, 9, 148);
@@ -270,20 +294,28 @@ li {
   line-height: 75%;
 }
 
+.header__heading--span2 {
+  font-size: 1.2rem;
+}
+/*MEDIA QUERY 1024px display resolution*/
+@media only screen and (max-width: 1024px) {
+  .header__heading--1 {
+    font-size: 3rem;
+  }
+
+  .header__heading--span2 {
+    font-size: 1rem;
+  }
+}
+/*MEDIA QUERY 600px display resolution*/
 @media only screen and (max-width: 600px) {
-  .text-box__heading--h1 {
+  .header__heading--1 {
     font-size: 1.5rem;
     margin-top: 20px;
     padding: 10% 0 0 0;
   }
-}
 
-.text-box__heading--span2 {
-  font-size: 1.2rem;
-}
-
-@media only screen and (max-width: 600px) {
-  .text-box__heading--span2 {
+  .header__heading--span2 {
     font-size: 0.9rem;
   }
 }
