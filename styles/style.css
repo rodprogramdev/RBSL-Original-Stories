@@ -326,11 +326,23 @@ li {
   margin: 5% 0 0 0;
 }
 
+/*------------------------------------------------------------------------------*/
+
+/*------------- MEDIA QUERY FOR THE .about ---------------------*/
+/*MEDIA QUERY 1024px display resolution*/
+@media only screen and (max-width: 1024px) {
+  .about {
+    font-size: 15px;
+  }
+}
+/*MEDIA QUERY 600px display resolution*/
 @media only screen and (max-width: 600px) {
   .about {
     font-size: 16px;
   }
 }
+
+/*------------------------------------------------------------------------------*/
 
 .about__img {
   float: left;
@@ -344,12 +356,25 @@ li {
   border: 2px solid black;
 }
 
+/*------------------------------------------------------------------------------*/
+
+/*------------- MEDIA QUERY FOR THE .about__img--pic ---------------------*/
+/*MEDIA QUERY 1024px display resolution*/
+@media only screen and (max-width: 1024px) {
+  .about__img--pic {
+    height: 250px;
+    width: 250px;
+  }
+}
+/*MEDIA QUERY 600px display resolution*/
 @media only screen and (max-width: 600px) {
   .about__img--pic {
     height: 280px;
     width: 280px;
   }
 }
+
+/*------------------------------------------------------------------------------*/
 
 .about__heading {
   text-align: center;
