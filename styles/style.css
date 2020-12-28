@@ -535,7 +535,7 @@ aside {
   margin-top: 50px;
   font-style: italic;
 }
-
+/*------------------------------------------------------------------------------*/
 /*MEDIA QUERY 1024px display resolution*/
 @media only screen and (max-width: 1024px) {
   aside {
@@ -566,7 +566,7 @@ aside {
   border-radius: 5px;
   margin-bottom: 8px;
 }
-
+/*------------------------------------------------------------------------------*/
 /*MEDIA QUERY 1024px display resolution*/
 @media only screen and (max-width: 1024px) {
   .childrenStories__article {
@@ -628,6 +628,9 @@ blockquote {
   display: table;
 }
 
+/*------------------------------------------------------------------------------*/
+
+/*------------- MEDIA QUERY FOR THE .box ---------------------*/
 .box {
   float: left;
   background-color: #fff;
@@ -638,6 +641,18 @@ blockquote {
   border: 2px ridge black;
 }
 
+.box:hover {
+  box-shadow: -2px 8px 17px -5px rgba(0, 0, 0, 0.89);
+  cursor: pointer;
+}
+/*------------------------------------------------------------------------------*/
+@media only screen and (max-width: 1024px) {
+  .box{
+    margin: 0 2%;
+    height: 270px;
+    width: 270px;
+  }
+}
 @media only screen and (max-width: 600px) {
   .box {
     float: left;
@@ -650,11 +665,7 @@ blockquote {
   }
 }
 
-.box:hover {
-  box-shadow: -2px 8px 17px -5px rgba(0, 0, 0, 0.89);
-  cursor: pointer;
-}
-
+/*------------------------------------------------------------------------------*/
 .box--1 {
   background-image: url("../images/rbslopez-photos-website.png");
   background-size: cover;
